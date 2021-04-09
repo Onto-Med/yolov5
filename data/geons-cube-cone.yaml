@@ -1,0 +1,20 @@
+# COMPASS Geon Cube/Cone 2021 dataset - 108 training images
+# Train command: python train.py --data geons-cube-cone.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /geons-cube-cone
+#     /yolov5
+
+
+# download command/URL (optional)
+# download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../geons-cube-cone/images/train/  # 85 images
+val: ../geons-cube-cone/images/val/  # 13 images
+
+# number of classes
+nc: 3
+
+# class names
+names: [ 'Cone', 'Cube', 'Cavitiy' ]
